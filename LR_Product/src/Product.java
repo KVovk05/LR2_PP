@@ -17,7 +17,7 @@ public class Product {
                 ", daysToExp=" + daysToExp +
                 ", price=" + price +
                 ", amount=" + amount +
-                '}';
+                "}\n";
     }
 
     public double getPrice() {
