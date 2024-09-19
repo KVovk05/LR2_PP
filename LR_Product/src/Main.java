@@ -12,9 +12,9 @@ public class Main {
         System.out.println("Enter naming of products which you want to output ");
         Scanner myObj = new Scanner(System.in);
         name = myObj.nextLine();
-     for(int i = 0 ;i<arr.length;i++){
-         if(arr[i].getNaming() == name){
-             arr[i].toString();
+     for(int i = 0 ;i < arr.length; i++){
+         if(arr[i].getNaming().equals(name)){
+
              System.out.println(arr[i]);
          }
      }
