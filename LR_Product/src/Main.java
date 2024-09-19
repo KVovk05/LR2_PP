@@ -48,8 +48,6 @@ public class Main {
         }
 
     }
-//    int id, String naming, String manufacturer, String prodDate,
-//    int daysToExp, double price, int amount)
     public static Product[] createArray(){
         Product[] arr;
         arr = new Product[10];
