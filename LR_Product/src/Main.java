@@ -12,13 +12,12 @@ public class Main {
         System.out.println("Enter naming of products which you want to output ");
         Scanner myObj = new Scanner(System.in);
         name = myObj.nextLine();
-        for(int i = 0; i < 10;i++ ){
-            if(arr[i].getNaming().equals(name) ){
-                String info = arr[i].toString();
-                System.out.println(info);
-
-            }
-        }
+     for(int i = 0 ;i<arr.length;i++){
+         if(arr[i].getNaming() == name){
+             arr[i].toString();
+             System.out.println(arr[i]);
+         }
+     }
     }
     static void namePrice(Product[] arr){
         String name;
@@ -74,18 +73,11 @@ public class Main {
             System.out.println("2.Output product by specific name and  by maximal price\n" +
                     "3.Output products with more than N days to expiration\n4.Exit ");
             menu = sc.nextInt();
-            switch(menu){
-                case 1:
-                    prodNaming(arr);
-                    break;
-                case 2:
-                    namePrice(arr);
-                    break;
-                case 3:
-                    expDate(arr);
-                    break;
-
-              }
+            switch (menu) {
+                case 1 -> prodNaming(arr);
+                case 2 -> namePrice(arr);
+                case 3 -> expDate(arr);
+            }
             }
           }
         }
